@@ -1,0 +1,283 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f8;
+}
+
+main {
+  max-width: 1200px;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0;
+  color: #2F4353
+}
+
+h1, nav a, .card h1 {
+  color: #2F4353
+}
+
+header {
+  font-size: 1.5em;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: #2F4353
+}
+
+.name-logo:hover {
+  color: #050506;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  /* border-bottom: 3px solid #cddbe9; */
+}
+
+ul,li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: #2F4353
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #2F4353;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #2F4353;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0.5rem 15%;
+  text-align: justify;
+  color: #2F4353
+}
+
+.intro-text {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2F4353
+  /* border: 10px solid blue; */
+}
+
+.intro-box {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*! gradient sourced from https://www.eggradients.com/ */
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  /* border: 3px solid red; */
+}
+
+.intro-text h1 {
+  color: #2F4353
+}
+
+.intro-text p {
+  font-size: 2rem;
+  /* border: 10px solid green; */
+}
+
+#my-name {
+  font-weight: 700;
+  color: #050506;
+}
+
+.footbar{
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 1rem;
+  /*! gradient sourced from https://www.eggradients.com/ */
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+}
+
+.about-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content img {
+  width: 20%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #000;
+  margin: 2rem;
+}
+
+.skills-content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 3px solid green */
+}
+
+.skills-content p {
+  margin: 20px 40px;
+  text-align: center;
+}
+
+.skills-icons {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.skills-icons img {
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+  padding: 0;
+  transition: 0.5s;
+}
+.skills-icons img:hover {
+  height: 200px;
+  width: 200px;
+  margin: 0;
+}
+@media only screen and (max-width: 550px) {
+  .intro-text{
+      background:
+      linear-gradient(
+          110deg,
+          transparent 30%, #e3e3e3 30%,
+          #e3e3e3 70%, transparent 70%
+          )
+          50% / 200% 50%
+          no-repeat;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .skills-icons {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .skills-icons img {
+      height: 110px;
+      width: 110px;
+      margin: 10px;
+  }
+  .skills-icons img:hover {
+      height: 130px;
+      width: 130px;
+      margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-icons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-icons img {
+      height: 100px;
+      width: 100px;
+      margin: 5px;
+  }
+  .skills-icons img:hover {
+      height: 110px;
+      width: 110px;
+      margin: 0;
+  }
+}
+
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  width: 50vh;
+}
+
+.card {
+  flex: 1;
+  width: 300px;
+  margin: 15px;
+  padding: 0 10px;
+  /* border: 1px solid #17c7ca; */
+  border-radius: 5px;
+  text-align: center;
+  /*! gradient sourced from https://www.eggradients.com/ */
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+}
+
+.card img:hover {
+  border-color:  #a4d0dd;
+  box-shadow: 0 0 2px 2px #a4d0dd;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact-links img {
+  width: 50px;
+  margin: 20px;
+}
+
+.contact-links img:hover {
+  filter: brightness(0);
+}
